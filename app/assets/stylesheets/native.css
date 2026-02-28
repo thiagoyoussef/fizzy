@@ -96,6 +96,10 @@
     /* Search
     /* ------------------------------------------------------------------------ */
 
+    .search {
+      overscroll-behavior: auto;
+    }
+
     .search__title {
       text-decoration: none;
     }
