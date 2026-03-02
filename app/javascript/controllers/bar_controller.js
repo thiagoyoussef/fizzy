@@ -22,11 +22,8 @@ export default class extends Controller {
     this.#hideItem(this.searchTarget)
   }
 
-  clearInput() {
-    if (this.searchInputTarget.value) {
-      this.searchInputTarget.value = ""
-      this.searchInputTarget.focus()
-    } else {
+  clearInput(event) {
+    if (event.detail.isAlreadyEmpty) {
       this.reset()
     }
   }
